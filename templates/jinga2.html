@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá mundo com Jinga2</title>
+</head>
+<body>
+    
+    Olá, {{ n }},vamos usar Jinja2 para arquivos HTML.
+    <br>
+    <table border="1">
+        {% for prod in p %}
+            <tr>
+                <td>{{ prod.nome }}</td>
+                <td> {{ prod.preco }} </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
